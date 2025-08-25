@@ -1,1 +1,2 @@
-[Go to page 🚀](https://dev-misa.github.io/photosbyftj/)
+[Go to page 🚀](https://photosbyftj.com/) <br>
+currently building on WordPress using Elementor and Custom CSS.
