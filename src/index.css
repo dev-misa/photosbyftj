@@ -1,8 +1,7 @@
 :root{
-  --blur-surface: rgba(255,255,255,0.22);  /* bar */
+  --blurbg: rgba(255,255,255,0.22);  /* bar */
   --chip-surface: rgba(255,255,255,0.35);  /* inner chips */
   --hairline: rgba(255,255,255,0.25);
 }
 * {
-  outline: 1px dotted blue;
 }

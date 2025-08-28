@@ -1,5 +1,6 @@
 import React from 'react';
 import pfp from "../assets/images/josh pfp.png";
+import sun from "../assets/images/sun-icon.svg";
 const Header = () => {
   return (
       <div className="Header">
@@ -15,6 +16,7 @@ const Header = () => {
       <div className="NavLinks">
         <h2>About</h2>
         <h2>Collections</h2>
+        <img src={sun} alt="" />
       </div>
       </div>
       
