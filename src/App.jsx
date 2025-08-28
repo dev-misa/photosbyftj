@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './components/header'
 import pfp from './assets/images/josh pfp.png'
+import About from './components/About'
 import './App.css'
 
 function App() {
@@ -8,9 +9,7 @@ function App() {
   return (
     <div>
       <Header />
-      <img src={pfp} alt="" />
-      <img src={pfp} alt="" />
-      <img src={pfp} alt="" />
+      <About />
     </div>
   )
 }

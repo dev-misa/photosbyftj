@@ -1,7 +1,29 @@
-:root{
-  --blurbg: rgba(255,255,255,0.22);  /* bar */
-  --chip-surface: rgba(255,255,255,0.35);  /* inner chips */
-  --hairline: rgba(255,255,255,0.25);
+:root {
+  --bg-color: #ffffff;
+  --accent:#7E3234;
+  --txt:#777;
+  --colShadow: rgba(12, 12, 12, 0.25);
+  --blurbg: rgba(255, 255, 255, 0.35); 
+  --chip-surface: rgba(255, 255, 255, 0.35); 
+  --hairline: rgba(255, 255, 255, 0.25);
+}
+
+.dark-mode {
+  --bg-color: #121212;
+  --accent: #A62626;
+  --colShadow: #A62626;
+  --txt:#fff;
+  --blurbg: rgba(12, 12, 12, 0.25); 
+  --chip-surface: rgba(255, 255, 255, 0.15); 
+  --hairline: rgba(255, 255, 255, 0.1);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
 }
 * {
+  
 }
+

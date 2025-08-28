@@ -1,2 +1,4 @@
-[Go to page 🚀](https://photosbyftj.com/) <br>
-currently building on WordPress using Elementor and Custom CSS.
+[Go to page 🚀](https://photosbyftj.com/)<- WordPress, Astra + Elementor
+<br>
+<br>
+[Go to page 🚀](https://dev-misa.github.io/photosbyftj/) <- React (github pages)
