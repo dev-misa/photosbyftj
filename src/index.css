@@ -3,3 +3,6 @@
   --chip-surface: rgba(255,255,255,0.35);  /* inner chips */
   --hairline: rgba(255,255,255,0.25);
 }
+* {
+  outline: 1px dotted blue;
+}

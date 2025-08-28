@@ -22,21 +22,24 @@
   display: block;
 }
 .Logo {
-  background-color: var(--chip-surfac); font-weight: 500;
+  background-color: var(--chip-surface); font-weight: 500;
 }
 .ftj {
   color:#7E3234;
   font-family: "Ephesis", cursive;
-  font-weight: 500;font-size:35px;
-  position:fixed;margin-top:-35px;
+  font-weight: 500;font-size:45px;
+  position:fixed;margin-top:-40px;
 }
 .pht {
   color:#777;
    font-family: "Enriqueta", serif;
-  font-weight: 400;
+  font-weight: 400; font-size:18px;
   font-style: normal;
   margin-bottom:10px;
-  position:fixed;margin-top:-5px;
+  position:fixed;margin-top:0px;
 
+}
+.NavLinks {
+  background-color: var(--chip-surface);
 }
 
