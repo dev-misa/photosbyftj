@@ -1,0 +1,17 @@
+<svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="37.5" cy="37.5" r="36" fill="url(#paint0_linear_2_25)" stroke="black" stroke-width="3"/>
+<path d="M28.3419 21.0257L29.3419 24.0257C29.6657 24.997 28.9427 26 27.9189 26H19.5C18.7621 26 18.241 25.277 18.4743 24.577L19.6581 21.0257C19.8623 20.4131 20.4355 20 21.0811 20H26.9189C27.5645 20 28.1377 20.4131 28.3419 21.0257Z" fill="#515151"/>
+<path d="M19 26H19.5M19.5 26H27.9189C28.9427 26 29.6657 24.997 29.3419 24.0257L28.3419 21.0257C28.1377 20.4131 27.5645 20 26.9189 20H21.0811C20.4355 20 19.8623 20.4131 19.6581 21.0257L18.4743 24.577C18.241 25.277 18.7621 26 19.5 26V26Z" stroke="black" stroke-width="1.5"/>
+<path d="M57 54H17C14.2386 54 12 51.7614 12 49V29C12 26.2386 14.2386 24 17 24H57C59.7614 24 62 26.2386 62 29V49C62 51.7614 59.7614 54 57 54Z" fill="#515151" stroke="black" stroke-width="2"/>
+<circle cx="37" cy="39" r="11" fill="white" stroke="black" stroke-width="2"/>
+<path d="M57 28H53.5C52.6716 28 52 28.6716 52 29.5V31.5C52 32.3284 52.6716 33 53.5 33H57C57.8284 33 58.5 32.3284 58.5 31.5V29.5C58.5 28.6716 57.8284 28 57 28Z" fill="#777777" stroke="black" stroke-width="1.5"/>
+<circle cx="37" cy="39" r="10" fill="#777777"/>
+<circle cx="37" cy="39" r="8" fill="#850000"/>
+<circle cx="37" cy="39" r="3" fill="#F00B0B"/>
+<defs>
+<linearGradient id="paint0_linear_2_25" x1="37.5" y1="0" x2="37.5" y2="75" gradientUnits="userSpaceOnUse">
+<stop stop-color="#850000"/>
+<stop offset="1"/>
+</linearGradient>
+</defs>
+</svg>
