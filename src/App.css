@@ -85,3 +85,41 @@
   font-family:enriqueta;font-size:20px;text-align: center;
 
 }
+.CurrentSetup {
+  height: 550px;width: 80%;padding-top:50px;
+  background: linear-gradient(var(--bg-color)0%, rgba(84,37,38,20%) 100%);
+  border-radius:50px;border:.75px solid #7E3234;
+}
+.CurrentSetup h1 {
+  text-align: center;color:var(--txt);
+  font-family:enriqueta;font-weight:400;font-size:65px;padding-bottom:25px;
+}
+
+.SetupCards {
+  height: 300px;display:flex;justify-content: space-evenly;
+  flex-direction: row;align-items: center;margin-bottom:25px;
+}
+.CameraCard, .LensCard, .EditingCard {
+  height:165px;width:300px; font-family:enriqueta;border-radius:25px;
+  font-size: 23px;color:var(--txt);text-align: center;font-weight:700;
+  border:.25px solid #7E3234; box-shadow: 0px 7px 10px 3px var(--colShadow);
+    background:var(--bg-color);display:flex; flex-direction: column;
+
+}
+.CameraCard2, .LensCard2, .EditingCard2 {
+  margin-top:22px;
+}
+
+.QuoteCard {
+  display:flex;flex-wrap: wrap;justify-content: center;
+}
+.QuoteCard p {
+color:var(--accent);font-size:25px;font-family:arimo;font-style:italic;
+}
+
+.AA h4{
+  color:var(--txt);font-size:25px;font-family:enriqueta;font-weight:500;
+}
+.Footer {
+  height: 100px;
+}

@@ -2,6 +2,7 @@ import React from 'react'
 import Header from './components/header'
 import pfp from './assets/images/josh pfp.png'
 import About from './components/About'
+import Footer from './components/Footer'
 import './App.css'
 
 function App() {
@@ -10,7 +11,8 @@ function App() {
 
     <div>
       <Header />
-      <About />
+      <About />    
+      <Footer />
     </div>
   )
 }

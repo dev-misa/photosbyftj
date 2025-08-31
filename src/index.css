@@ -6,6 +6,9 @@
   --blurbg: rgba(255, 255, 255, 0.35); 
   --chip-surface: rgba(255, 255, 255, 0.35); 
   --hairline: rgba(255, 255, 255, 0.25);
+  --cs-bg: rgba(119,119,119);
+    --card-txt: #777;
+
 }
 
 .dark-mode {
@@ -16,6 +19,8 @@
   --blurbg: rgba(12, 12, 12, 0.25); 
   --chip-surface: rgba(255, 255, 255, 0.15); 
   --hairline: rgba(255, 255, 255, 0.1);
+  --cs-bg: rgb(221, 1, 5);
+  --card-txt: #A62626;
 }
 
 body {
@@ -23,7 +28,3 @@ body {
   color: var(--text-color);
   transition: background-color 0.3s, color 0.3s;
 }
-* {
-  
-}
-
