@@ -121,5 +121,12 @@ color:var(--accent);font-size:25px;font-family:arimo;font-style:italic;
   color:var(--txt);font-size:25px;font-family:enriqueta;font-weight:500;
 }
 .Footer {
-  height: 100px;
+  margin-top:50px;height:500px;text-align: center;
 }
+.HRLine {
+  height: 1px;background:var(--accent);width:83%;display:block;margin-right:auto;margin-left:auto;margin-bottom:50px;
+}
+.Footer-Logo {
+  display:flex;flex-wrap: wrap;justify-content: center;
+}
+.
