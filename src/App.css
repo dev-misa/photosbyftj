@@ -86,9 +86,10 @@
 
 }
 .CurrentSetup {
-  height: 550px;width: 80%;padding-top:50px;
+  height: 55vh;width: 80%;padding-top:50px;
   background: linear-gradient(var(--bg-color)0%, rgba(84,37,38,20%) 100%);
   border-radius:50px;border:.75px solid #7E3234;
+  
 }
 .CurrentSetup h1 {
   text-align: center;color:var(--txt);
@@ -98,6 +99,7 @@
 .SetupCards {
   height: 300px;display:flex;justify-content: space-evenly;
   flex-direction: row;align-items: center;margin-bottom:25px;
+  flex-wrap:wrap;row-gap: 50px;
 }
 .CameraCard, .LensCard, .EditingCard {
   height:165px;width:300px; font-family:enriqueta;border-radius:25px;
@@ -121,12 +123,21 @@ color:var(--accent);font-size:25px;font-family:arimo;font-style:italic;
   color:var(--txt);font-size:25px;font-family:enriqueta;font-weight:500;
 }
 .Footer {
-  margin-top:50px;height:500px;text-align: center;
+  margin-top:50px;height:125px;text-align: center;
 }
 .HRLine {
   height: 1px;background:var(--accent);width:83%;display:block;margin-right:auto;margin-left:auto;margin-bottom:50px;
 }
 .Footer-Logo {
-  display:flex;flex-wrap: wrap;justify-content: center;
+  display:flex;flex-wrap: wrap;justify-content: center;gap:8px;
 }
-.
+.copy-tm, .year,.misa-credits{
+  color:var(--txt);font-family:enriqueta;
+}
+.copy-tm{
+  color:var(--txt);font-family:enriqueta;line-height: 1.75;
+}
+.FelixJosh-Logo {
+  color:var(--accent);font-family:ephesis;font-size:35px;line-height: 0.85;
+}
+
