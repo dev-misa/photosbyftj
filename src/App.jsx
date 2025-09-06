@@ -1,20 +1,22 @@
-import React from 'react'
-import Header from './components/header'
-import pfp from './assets/images/josh pfp.png'
-import About from './components/About'
-import Footer from './components/Footer'
-import './App.css'
+// src/App.jsx
+import { Routes, Route } from 'react-router-dom';
+import Header from './components/header.jsx';
+import Footer from './components/Footer.jsx';
+import About from './components/About.jsx';
+import CollectionsPage from './pages/CollectionsPage.jsx';
+import './App.css';
 
-function App() {
-
+export default function App() {
   return (
-
-    <div>
+    <>
       <Header />
-      <About />  
+      <main>
+        <Routes>
+          <Route path="/" element={<About />} />
+          <Route path="/collections" element={<CollectionsPage />} />
+        </Routes>
+      </main>
       <Footer />
-    </div>
-  )
+    </>
+  );
 }
-
-export default App
