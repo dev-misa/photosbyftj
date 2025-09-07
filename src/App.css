@@ -213,6 +213,104 @@ color:var(--accent);font-size:25px;font-family:arimo;font-style:italic;
  overflow: hidden;        
 }
 
+.AboutSection {
+  padding: 100px 0px 0px 0px;
+  display:flex;flex-direction: column;align-items: center;
+  gap:25px;
+}
+.AboutSection img {
+  height:250px;
+}
+.AbtMeBtn {
+  height:40px;width:325px;background-color: var(--bg-color);
+  border:0.5px solid var(--accent);border-radius:25px;
+  box-shadow: 0px 4px 4px 0px var(--colShadow); 
+  display:flex;justify-content: center;
+}
+.AbtMeBtn h2 {
+  display:flex;align-items: center;align-content: center;justify-content: center;
+  font-size:14px;color:var(--accent);font-family:enriqueta;font-weight:500;
+}
+.AbtMeHello {
+  display:flex;justify-content: center;gap:15px;align-items: center;
+  flex-wrap: wrap;width: 90vw;
+}
+.HelloIM h2{
+  color:var(--txt);font-family:enriqueta;font-weight:400;font-size:40px;
+}
+.FTJ2 h2{
+  color:var(--accent);font-family:ephesis;font-weight:400;font-size:55px;
+}
+.AbtMeP {
+  flex-wrap: wrap;width: 80vw;display:flex;justify-content: center;
+}
+.AbtMeP p {
+  color:var(--txt);
+  font-family:enriqueta;font-size:18px;text-align: center;
+
+}
+.CurrentSetup {
+  height: 745px;width: 85%;padding-top:50px;
+  background: linear-gradient(var(--bg-color)0%, rgba(84,37,38,20%) 100%);
+  border-radius:50px;border:.75px solid #7E3234;
+  
+}
+.CurrentSetup h1 {
+  text-align: center;color:var(--txt);
+  font-family:enriqueta;font-weight:400;font-size:35px;padding-bottom:25px;
+}
+
+.SetupCards {
+  height: 300px;display:flex;justify-content: space-evenly;
+  flex-direction: row;align-items: center;margin-bottom:25px;
+  flex-wrap:wrap;row-gap: 50px;
+}
+.CameraCard, .LensCard, .EditingCard {
+  height:150px;width:235px; font-family:enriqueta;border-radius:25px;
+  font-size: 18px;color:var(--txt);text-align: center;font-weight:700;
+  border:.25px solid #7E3234; box-shadow: 0px 7px 10px 3px var(--colShadow);
+    background:var(--bg-color);display:flex; flex-direction: column;
+
+}
+.CameraCard2, .LensCard2, .EditingCard2 {
+  margin-top:22px;
+}
+
+.QuoteCard {
+  display:flex;flex-wrap: wrap;justify-content: center;gap:0;
+}
+.QuoteCard p {
+color:var(--accent);font-size:10px;font-family:arimo;font-style:italic;
+}
+
+.AA h4{
+  color:var(--txt);font-size:12px;font-family:enriqueta;font-weight:500;
+}
+.Footer {
+  margin-top:50px;height:125px;text-align: center;
+}
+.HRLine {
+  height: 1px;background:var(--accent);width:83%;display:block;margin-right:auto;margin-left:auto;margin-bottom:50px;
+}
+.Footer-Logo {
+  display:flex;flex-wrap: wrap;justify-content: center;gap:5px;
+}
+.copy-tm, .year,.misa-credits{
+  color:var(--txt);font-family:enriqueta;font-size:14px;
+}
+.copy-tm{
+  color:var(--txt);font-family:enriqueta;line-height: 1.75;
+}
+.FelixJosh-Logo {
+  color:var(--accent);font-family:ephesis;font-size:20px;line-height: 0.85;
+}
+
+.firstQ svg{
+  height: 10px;margin-bottom:10px;
+}
+.secondQ svg {
+  height: 10px;margin-bottom:10px;
+}
 
 }
 

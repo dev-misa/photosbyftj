@@ -28,3 +28,6 @@ body {
   color: var(--text-color);
   transition: background-color 0.3s, color 0.3s;
 }
+* {
+  outline: 1px dotted rebeccapurple;
+}
