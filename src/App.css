@@ -1,6 +1,6 @@
 *{margin:0;padding:0;background-color: var(--mybg);}
 .Header {
-   backdrop-filter: blur(5px);
+   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(9px);
   position: fixed;
   top: 0;left: 0;
@@ -312,6 +312,28 @@ color:var(--accent);font-size:10px;font-family:arimo;font-style:italic;
   height: 10px;margin-bottom:10px;
 }
 
+/*collections page mobile view*/
+.Header {
+  height:75px;
+}
+.CollectionsPageHeadline {
+  display:flex;flex-direction: column;text-align: center;align-items: center;
+  
+}
+.CollectionsPageHeadline img{
+  height:390px;width:325px;border-radius: 25px;
+  display:block;margin-left:auto;margin-right:auto;
+}
+.ColMemContainer {
+  display:flex;flex-direction: row;align-items: center;
+  
+}
+.separator {
+  height: 30px;background: rgb(0, 0, 0);width: 2px;
+}
+.PhotoCategories {
+  display:flex;flex-wrap: wrap;gap:25px;
+}
 }
 
 
