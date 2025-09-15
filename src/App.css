@@ -318,6 +318,7 @@ color:var(--accent);font-size:10px;font-family:arimo;font-style:italic;
 }
 .CollectionsPageHeadline {
   display:flex;flex-direction: column;text-align: center;align-items: center;
+  color:var(--txt);font-family: 'enriqueta';
   
 }
 .CollectionsPageHeadline img{
@@ -329,11 +330,18 @@ color:var(--accent);font-size:10px;font-family:arimo;font-style:italic;
   
 }
 .separator {
-  height: 30px;background: rgb(0, 0, 0);width: 2px;
+  height: 30px;background:var(--txt);width: 2px;
+  
+}
+.PhotoCategories a img{
+  display:flex;flex-wrap: wrap;
 }
 .PhotoCategories {
-  display:flex;flex-wrap: wrap;gap:25px;
+  display: grid;                              
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 50px;                                      
 }
+
 }
 
 
