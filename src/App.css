@@ -342,6 +342,50 @@ color:var(--accent);font-size:10px;font-family:arimo;font-style:italic;
   gap: 50px;                                      
 }
 
+.BackToCollection {
+  margin-top: 100px;display:flex;flex-wrap:wrap;gap:10px;
+  
+}
+.BackToCollection button{
+  text-decoration: none; border:none;
+  width:35px;height:35px;margin-left:15px;
+}
+.BTCh2 h2 {
+  display:inline-block;line-height:1;margin-top:5px;
+  color: #777;font-family:enriqueta; font-weight: normal;
+  font-size:20px;
 }
 
+.CollBadge {
+  display:flex;flex-direction: row;align-items: center;
+  align-content: center;flex-wrap: wrap;justify-content: center;gap:.75em;
+  margin-top:30px;
+  
+}
+.badge-cat  {
+  color: #fff;
+  background:#7E3234;
+  display:inline-block;
+  padding: 0.5em 1em;
+  border-radius:25px;
+  font-size:20px;
 
+}
+.photo-count {
+  color:gray;
+  display:inline-block;
+}
+
+.ComingSoon {
+  margin-top:250px;margin-bottom: 250px;
+  display:flex;flex-direction: column;justify-content: center; align-items: center;
+}
+.ComeBackSoon1 p {
+  color:gray; font-family: enriqueta;
+  margin-top:10px;
+}
+.ComeBackSoon2 p {
+  color:gray; font-family: enriqueta;
+}
+
+}

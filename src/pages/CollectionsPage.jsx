@@ -31,9 +31,14 @@ function CollectionsPage() {
           <img src={arch1}  />
           </Link>
 
-          <Link to="/collections/landscape"><img src={landscape1} alt="" /></Link>
-          <Link to="/collections/street"><img src={street1} alt="" /></Link>
+          <Link to="/collections/landscape">
+          <img src={landscape1}/>
+          </Link>
+          <Link to="/collections/street">
+            <img src={street1} />
+          </Link>
         </div>
+        
       </div>
 
     </div>

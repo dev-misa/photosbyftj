@@ -7,6 +7,8 @@ import CollectionsPage from './pages/CollectionsPage.jsx';
 import './App.css';
 import NaturePage2 from "./pages/NaturePage2.jsx";
 import ArchitecturePage from "./pages/ArchitecturePage.jsx"
+import StreetPage from './pages/StreetPage.jsx';
+import LandscapePage from './pages/LandscapePage.jsx'
 
 
 export default function App() {
@@ -17,7 +19,11 @@ export default function App() {
         <Routes>
           <Route path="/" element={<About />} />
           <Route path="/collections" element={<CollectionsPage />} />
-          <Route path="/collections/nature" element={<NaturePage2 />} /> {/* target */}
+          <Route path="/collections/nature" element={<NaturePage2 />} /> 
+          <Route path="/collections/architecture" element={<ArchitecturePage />} />
+          <Route path="/collections/architecture" element={<ArchitecturePage />} />
+          <Route path="/collections/street" element={<StreetPage />} />
+          <Route path="/collections/landscape" element={<LandscapePage />} />
         </Routes>
       </main>
       <Footer />
