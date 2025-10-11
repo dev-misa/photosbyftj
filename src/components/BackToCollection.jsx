@@ -1,5 +1,4 @@
 import React, { use } from 'react'
-import btc from "../assets/images/BTCbutton.svg"
 import {useNavigate} from 'react-router-dom'
 function BackToCollection() {
     const navigate = useNavigate();
