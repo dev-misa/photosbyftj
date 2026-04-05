@@ -36,19 +36,11 @@ The application is built with reusability in mind, separating logic into managea
 * **Backend Migration:** Transitioning from static assets to a custom **Java API**.
 * **Cloud Infrastructure:** Leveraging **Oracle Cloud Infrastructure (OCI) Object Storage** for high-performance image hosting and global delivery.
 * **Dynamic Metadata:** Implementing automated sorting and filtering for large-scale photo libraries.
-### 📸 Responsive Preview (Urban/Street Category)
+### 📸 Responsive Preview
 
 | Mobile View | Desktop View (1470px) |
 | :---: | :---: |
-| <img src="./screenshots/mobile_urban.png" width="200" /> | <img src="./screenshots/desktop_urban.png" width="450" /> |
+| <img width="312" height="682" src="https://github.com/user-attachments/assets/f9c1d0a9-6c4f-4ff2-829a-ba955ce255cc" /> | <img width="1470" height="833" alt="Screenshot 2026-04-04 at 10 09 30 PM" src="https://github.com/user-attachments/assets/c5b684a4-797f-417e-811a-ec1fe964f5cc" /> |
+| <img width="310" height="679" alt="Screenshot 2026-04-04 at 10 12 13 PM" src="https://github.com/user-attachments/assets/30bdb4fc-5d76-4f55-b67f-cff6e28d32c0" /> | <img width="1470" height="837" alt="Screenshot 2026-04-04 at 10 11 12 PM" src="https://github.com/user-attachments/assets/95529c5a-5105-4d13-951a-baf955988f37" /> |
 
-<details>
-<summary><b>Click to see other categories (Nature, Architecture, Landscape)</b></summary>
 
-| Category | Mobile | Desktop |
-| :--- | :---: | :---: |
-| **Nature** | [View](./screenshots/m_nature.png) | [View](./screenshots/d_nature.png) |
-| **Architecture** | [View](./screenshots/m_arch.png) | [View](./screenshots/d_arch.png) |
-| **Landscape** | [View](./screenshots/m_land.png) | [View](./screenshots/d_land.png) |
-
-</details>
