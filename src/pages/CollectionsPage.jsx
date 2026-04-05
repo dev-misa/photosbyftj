@@ -13,7 +13,7 @@ function CollectionsPage() {
       <br /><br /><br /><br /><br /><br />
       <div className="CollectionsPageHeadline">
         <h1>Visual Stories</h1>
-        <p>Lorem dolor semper justo magna vitae.</p>
+        <p>Where engineering precision meets artistic vision.</p>
         <div className="ColMemContainer">
           <h2>4&nbsp;</h2>
           <div className="separator"></div>
