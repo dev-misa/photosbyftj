@@ -36,3 +36,19 @@ The application is built with reusability in mind, separating logic into managea
 * **Backend Migration:** Transitioning from static assets to a custom **Java API**.
 * **Cloud Infrastructure:** Leveraging **Oracle Cloud Infrastructure (OCI) Object Storage** for high-performance image hosting and global delivery.
 * **Dynamic Metadata:** Implementing automated sorting and filtering for large-scale photo libraries.
+### 📸 Responsive Preview (Urban/Street Category)
+
+| Mobile View | Desktop View (1470px) |
+| :---: | :---: |
+| <img src="./screenshots/mobile_urban.png" width="200" /> | <img src="./screenshots/desktop_urban.png" width="450" /> |
+
+<details>
+<summary><b>Click to see other categories (Nature, Architecture, Landscape)</b></summary>
+
+| Category | Mobile | Desktop |
+| :--- | :---: | :---: |
+| **Nature** | [View](./screenshots/m_nature.png) | [View](./screenshots/d_nature.png) |
+| **Architecture** | [View](./screenshots/m_arch.png) | [View](./screenshots/d_arch.png) |
+| **Landscape** | [View](./screenshots/m_land.png) | [View](./screenshots/d_land.png) |
+
+</details>
