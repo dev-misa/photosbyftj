@@ -14,7 +14,7 @@ function Footer() {
            <p>Felix Josh</p>
          </div>
          <div className="misa-credits">
-           <p>Photography. &nbsp; Made by Misa with tons of coffee breaks.</p>
+           <p>Photography.</p>
          </div>
        </div>
     </div>

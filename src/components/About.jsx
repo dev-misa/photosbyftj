@@ -101,7 +101,7 @@ function About() {
                         </div>
                     
                         <p>
-                          &nbsp;When words become unclear, I shall focus with photographs&nbsp;
+                          When words become unclear, I shall focus with photograph
                         </p>
                         <div className="secondQ">
                             <svg width="20" height="17" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -122,8 +122,9 @@ function About() {
                        10.4001 0.881895 10.4001Z" fill="var(--accent)"/>
                     </svg>
                         </div>
-                        <div className="AA"><h4>&nbsp;- Ansel Adams</h4></div>
+                       
                     </div>
+                     <div className="AA"><h4>&nbsp;- Ansel Adams</h4></div>
                 </div>
                 
             </div>
