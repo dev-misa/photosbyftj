@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { NavLink } from 'react-router-dom';   // <-- add this
+import { Link, NavLink } from 'react-router-dom';   // <-- add this
 import pfp from '../assets/images/josh pfp.png';
 import sun from '../assets/images/sun-icon.svg';
 import moon from '../assets/images/moon-icon.svg';
@@ -29,7 +29,9 @@ const Header = () => {
   return (
     <div className="Header">
       <div className="MainLogo">
-        <img src={pfp} alt="josh" />
+        <Link to="/" aria-label="Home">
+          <img src={pfp} alt="josh" />
+        </Link>
       </div>
 
       <div className="Logo">

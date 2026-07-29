@@ -15,7 +15,12 @@
   justify-content: space-between;height: 80px;
   width: 80px; margin:0px 0px 0px 10px;
   border-radius: 100px; background-color: var(--chip-surface);
- overflow: hidden;        
+ overflow: hidden;
+}
+.MainLogo a {
+  display: block;
+  height: 100%;
+  width: 100%;
 }
 a,
 a:visited,
