@@ -1,4 +1,3 @@
-import React from 'react'
 import BackToCollection from '../components/BackToCollection'
 import CollectionBadge from '../components/CollectionBadge'
 import ComingSoonNotice from '../components/ComingSoonNotice'

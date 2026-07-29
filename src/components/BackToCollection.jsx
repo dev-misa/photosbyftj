@@ -1,4 +1,3 @@
-import React, { use } from 'react'
 import {useNavigate} from 'react-router-dom'
 function BackToCollection() {
     const navigate = useNavigate();

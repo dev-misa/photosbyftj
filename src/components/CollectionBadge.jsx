@@ -1,4 +1,3 @@
-import React from 'react'
 
 function CollectionBadge({category, photoCount}) {
   return (

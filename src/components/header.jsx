@@ -1,10 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';   // <-- add this
 import pfp from '../assets/images/josh pfp.png';
 import sun from '../assets/images/sun-icon.svg';
 import moon from '../assets/images/moon-icon.svg';
-import abouticon from '../assets/images/about-icon.svg';
-import collectionsicon from '../assets/images/collections-icon.svg';
 
 const Header = () => {
   const [darkMode, setDarkMode] = useState(false);

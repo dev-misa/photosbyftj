@@ -23,7 +23,6 @@ export default function App() {
           <Route path="/collections" element={<CollectionsPage />} />
           <Route path="/collections/nature" element={<NaturePage2 />} /> 
           <Route path="/collections/architecture" element={<ArchitecturePage />} />
-          <Route path="/collections/architecture" element={<ArchitecturePage />} />
           <Route path="/collections/street" element={<StreetPage />} />
           <Route path="/collections/landscape" element={<LandscapePage />} />
         </Routes>
