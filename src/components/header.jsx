@@ -1,26 +1,21 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';   // <-- add this
 import pfp from '../assets/images/josh pfp.png';
 import sun from '../assets/images/sun-icon.svg';
 import moon from '../assets/images/moon-icon.svg';
+import { clearSkeleton, clearSkeletonIfLoaded } from '../utils/imgSkeleton';
 
 const Header = () => {
-  const [darkMode, setDarkMode] = useState(false);
-
-  useEffect(() => {
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme === "dark") {
-      setDarkMode(true);
-      document.body.classList.add("dark-mode");
-    }
-  }, []);
+  const [darkMode, setDarkMode] = useState(() =>
+    document.documentElement.classList.contains('dark-mode')
+  );
 
   const toggleTheme = () => {
     if (darkMode) {
-      document.body.classList.remove("dark-mode");
+      document.documentElement.classList.remove("dark-mode");
       localStorage.setItem("theme", "light");
     } else {
-      document.body.classList.add("dark-mode");
+      document.documentElement.classList.add("dark-mode");
       localStorage.setItem("theme", "dark");
     }
     setDarkMode(!darkMode);
@@ -30,7 +25,15 @@ const Header = () => {
     <div className="Header">
       <div className="MainLogo">
         <Link to="/" aria-label="Home">
-          <img src={pfp} alt="josh" />
+          <img
+            src={pfp}
+            alt="josh"
+            width="500"
+            height="500"
+            className="img-skeleton"
+            ref={clearSkeletonIfLoaded}
+            onLoad={clearSkeleton}
+          />
         </Link>
       </div>
 

@@ -1,9 +1,18 @@
 import pfp from "../assets/images/josh pfp.png"
+import { clearSkeleton, clearSkeletonIfLoaded } from "../utils/imgSkeleton"
 
 function About() {
   return (
     <div className="AboutSection">
-        <img src={pfp} alt="" />
+        <img
+          src={pfp}
+          alt="Felix Josh"
+          width="500"
+          height="500"
+          className="img-skeleton"
+          ref={clearSkeletonIfLoaded}
+          onLoad={clearSkeleton}
+        />
         <div className="AbtMeBtn">
             <h2>Engineering Student & Photography Enthusiast</h2>
         </div>

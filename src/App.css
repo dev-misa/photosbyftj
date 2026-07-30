@@ -93,6 +93,7 @@ a:active {
 }
 .AboutSection img {
   height:350px;
+  width:350px;
 }
 .AbtMeBtn {
   height:50px;width:500px;background-color: var(--bg-color);
@@ -271,6 +272,7 @@ color:var(--accent);font-size:25px;font-family:arimo;font-style:italic;
 }
 .AboutSection img {
   height:200px;
+  width:200px;
 }
 .AbtMeBtn {
   height:50px;width:200px;background-color: var(--bg-color);
@@ -609,6 +611,7 @@ color:var(--accent);font-size:20px;font-family:arimo;font-style:italic;
 }
 .AboutSection img {
   height:350px;
+  width:350px;
 }
 .AbtMeBtn {
   height:50px;width:500px;background-color: var(--bg-color);
@@ -757,7 +760,7 @@ Header {
 }
 
 .ComingSoon {
-  margin-top:250px;margin-bottom: 250px;
+  margin-top:250px;margin-bottom: 300px;
   display:flex;flex-direction: column;justify-content: center; align-items: center;
 }
 .ComeBackSoon1 p {

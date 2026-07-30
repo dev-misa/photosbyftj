@@ -3,6 +3,7 @@ import landscape1 from "../assets/images/landscape1.jpeg"
 import nature1 from "../assets/images/nature1.jpeg"
 import street1 from "../assets/images/street1.jpeg"
 import { Link } from "react-router-dom";
+import { clearSkeleton, clearSkeletonIfLoaded } from "../utils/imgSkeleton";
 
 
 
@@ -23,18 +24,18 @@ function CollectionsPage() {
           
         <div className="PhotoCategories">
           <Link to="/collections/nature">
-          <img src={nature1} />
+          <img src={nature1} width="768" height="1024" className="img-skeleton" alt="Nature collection" ref={clearSkeletonIfLoaded} onLoad={clearSkeleton} />
           </Link>
 
           <Link to="/collections/architecture">
-          <img src={arch1}  />
+          <img src={arch1} width="1024" height="768" className="img-skeleton" alt="Architecture collection" ref={clearSkeletonIfLoaded} onLoad={clearSkeleton} />
           </Link>
 
           <Link to="/collections/landscape">
-          <img src={landscape1}/>
+          <img src={landscape1} width="1024" height="768" className="img-skeleton" alt="Landscape collection" ref={clearSkeletonIfLoaded} onLoad={clearSkeleton} />
           </Link>
           <Link to="/collections/street">
-            <img src={street1} />
+            <img src={street1} width="768" height="1024" className="img-skeleton" alt="Street collection" ref={clearSkeletonIfLoaded} onLoad={clearSkeleton} />
           </Link>
         </div>
         
