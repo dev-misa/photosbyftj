@@ -1,9 +1,8 @@
 import { useEffect, useState } from 'react';
 import { fetchCollectionImages } from '../utils/mediaApi';
 
-const STORAGE_PREFIX = 'cycler-order:';
-
-// Fisher-Yates.
+// Fisher-Yates: randomizes display order once per fetch so upload order
+// doesn't dictate which photo shows first.
 function shuffle(array) {
   const result = array.slice();
   for (let i = result.length - 1; i > 0; i--) {
@@ -11,42 +10,6 @@ function shuffle(array) {
     [result[i], result[j]] = [result[j], result[i]];
   }
   return result;
-}
-
-function loadOrder(folder) {
-  try {
-    const raw = localStorage.getItem(STORAGE_PREFIX + folder);
-    return raw ? JSON.parse(raw) : null;
-  } catch {
-    return null;
-  }
-}
-
-function saveOrder(folder, order) {
-  try {
-    localStorage.setItem(STORAGE_PREFIX + folder, JSON.stringify(order));
-  } catch {
-    // localStorage unavailable (private mode, quota) - order just won't persist
-  }
-}
-
-// Randomizes display order once per uploaded batch, then remembers that
-// order (per folder, in localStorage) so it stays stable across visits.
-// If the set of photo ids changes - a new upload or a deletion - it's a
-// new batch, so we reshuffle and remember the new order instead.
-function orderImages(folder, resources) {
-  const currentIds = resources.map((img) => img.public_id);
-  const storedOrder = loadOrder(folder);
-  const sameBatch =
-    storedOrder &&
-    storedOrder.length === currentIds.length &&
-    storedOrder.every((id) => currentIds.includes(id));
-
-  const orderedIds = sameBatch ? storedOrder : shuffle(currentIds);
-  if (!sameBatch) saveOrder(folder, orderedIds);
-
-  const byId = new Map(resources.map((img) => [img.public_id, img]));
-  return orderedIds.map((id) => byId.get(id));
 }
 
 export function useCollectionImages(folder) {
@@ -59,7 +22,7 @@ export function useCollectionImages(folder) {
 
     fetchCollectionImages(folder, { signal: controller.signal })
       .then((resources) => {
-        if (!controller.signal.aborted) setImages(orderImages(folder, resources));
+        if (!controller.signal.aborted) setImages(shuffle(resources));
       })
       .catch((err) => {
         if (!controller.signal.aborted) {
