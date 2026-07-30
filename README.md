@@ -1,7 +1,7 @@
 # PhotosByFTJ
 ### A Responsive Photography Portfolio built with React
 
-**PhotosByFTJ** is a minimalist, mobile-first web application designed to showcase high-quality photography across four distinct categories: **Nature, Architecture, Landscape, and Urban/Street**. Built with a focus on clean UI and seamless navigation, this project demonstrates the bridge between custom UI design and functional frontend development.
+**PhotosByFTJ** is a minimalist, mobile-first web application designed to showcase high-quality photography across four distinct categories: **Animals, Architecture, Landscape, and Urban/Street**. Built with a focus on clean UI and seamless navigation, this project demonstrates the bridge between custom UI design and functional frontend development.
 
 ---
 

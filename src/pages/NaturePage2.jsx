@@ -6,7 +6,7 @@ function NaturePage2() {
     <div className="SubPage">
 
     <BackToCollection />
-    <CollectionGallery category="NATURE" folder="nature" />
+    <CollectionGallery category="ANIMALS" folder="nature" />
     </div>
 
   )

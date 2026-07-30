@@ -43,7 +43,7 @@ function CollectionsPage() {
 
         <div className="PhotoCategories">
           <Link to="/collections/nature">
-          <CollectionCover folder="nature" alt="Nature collection" fallbackSrc={nature1} fallbackWidth={768} fallbackHeight={1024} />
+          <CollectionCover folder="nature" alt="Animals collection" fallbackSrc={nature1} fallbackWidth={768} fallbackHeight={1024} />
           </Link>
 
           <Link to="/collections/architecture">
