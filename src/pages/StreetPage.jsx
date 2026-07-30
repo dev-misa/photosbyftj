@@ -1,12 +1,10 @@
 import BackToCollection from '../components/BackToCollection'
-import CollectionBadge from '../components/CollectionBadge'
-import ComingSoonNotice from '../components/ComingSoonNotice'
+import CollectionGallery from '../components/CollectionGallery'
 function StreetPage() {
   return (
     <div>
       <BackToCollection />
-          <CollectionBadge category="STREET" photoCount={0}/>
-          <ComingSoonNotice />
+          <CollectionGallery category="STREET" folder="street" />
     </div>
   )
 }

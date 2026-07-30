@@ -394,6 +394,44 @@ Header {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 50px;                                      
 }
+.CollectionGallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.CollectionGallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+.CollectionStack {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  width: 100%;
+}
+.CollectionStack-item {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px var(--colShadow);
+  transition: transform 0.2s ease;
+}
+.CollectionStack-item-0 { z-index: 3; transform: rotate(0deg) translate(0, 0); }
+.CollectionStack-item-1 { z-index: 2; transform: rotate(-6deg) translate(-14px, 6px); }
+.CollectionStack-item-2 { z-index: 1; transform: rotate(7deg) translate(16px, 10px); }
+
+.PhotoCategories a:hover .CollectionStack-item-1 { transform: rotate(-10deg) translate(-22px, 10px); }
+.PhotoCategories a:hover .CollectionStack-item-2 { transform: rotate(11deg) translate(24px, 14px); }
 
 .BackToCollection {
   margin-top: 100px;display:flex;flex-wrap:wrap;gap:10px;
@@ -724,6 +762,44 @@ Header {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 50px;                                      
 }
+.CollectionGallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.CollectionGallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+.CollectionStack {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  width: 100%;
+}
+.CollectionStack-item {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px var(--colShadow);
+  transition: transform 0.2s ease;
+}
+.CollectionStack-item-0 { z-index: 3; transform: rotate(0deg) translate(0, 0); }
+.CollectionStack-item-1 { z-index: 2; transform: rotate(-6deg) translate(-14px, 6px); }
+.CollectionStack-item-2 { z-index: 1; transform: rotate(7deg) translate(16px, 10px); }
+
+.PhotoCategories a:hover .CollectionStack-item-1 { transform: rotate(-10deg) translate(-22px, 10px); }
+.PhotoCategories a:hover .CollectionStack-item-2 { transform: rotate(11deg) translate(24px, 14px); }
 
 .BackToCollection {
   margin-top: 100px;display:flex;flex-wrap:wrap;gap:10px;

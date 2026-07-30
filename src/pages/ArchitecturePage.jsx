@@ -1,13 +1,11 @@
 import BackToCollection from '../components/BackToCollection'
-import CollectionBadge from '../components/CollectionBadge'
-import ComingSoonNotice from '../components/ComingSoonNotice'
+import CollectionGallery from '../components/CollectionGallery'
 
 function ArchitecturePage() {
   return (
     <div>
     <BackToCollection />
-    <CollectionBadge category="ARCHITECTURE" photoCount={0}/>
-    <ComingSoonNotice />
+    <CollectionGallery category="ARCHITECTURE" folder="architecture" />
     </div>
   )
 }

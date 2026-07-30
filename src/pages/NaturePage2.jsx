@@ -1,14 +1,12 @@
 import BackToCollection from '../components/BackToCollection'
-import CollectionBadge from '../components/CollectionBadge'
-import ComingSoonNotice from '../components/ComingSoonNotice'
+import CollectionGallery from '../components/CollectionGallery'
 function NaturePage2() {
   return (
-    
+
     <div>
 
     <BackToCollection />
-    <CollectionBadge category="NATURE" photoCount={0}/>
-    <ComingSoonNotice />
+    <CollectionGallery category="NATURE" folder="nature" />
     </div>
 
   )

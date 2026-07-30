@@ -1,0 +1,9 @@
+name = "photosbyftj-media-api"
+main = "src/index.js"
+compatibility_date = "2024-11-01"
+
+# Not secret - the Cloudinary cloud name is public info (it's part of every
+# delivery URL the browser already fetches). The API key/secret are NOT
+# here - set them with `wrangler secret put CLOUDINARY_API_KEY` / `..._SECRET`.
+[vars]
+CLOUDINARY_CLOUD_NAME = "xjrej2gm"

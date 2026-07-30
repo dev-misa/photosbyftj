@@ -4,8 +4,44 @@ import nature1 from "../assets/images/nature1.jpeg"
 import street1 from "../assets/images/street1.jpeg"
 import { Link } from "react-router-dom";
 import { clearSkeleton, clearSkeletonIfLoaded } from "../utils/imgSkeleton";
+import { useCollectionImages } from "../hooks/useCollectionImages";
+import { cloudinaryUrl } from "../utils/cloudinary";
 
+const STACK_SIZE = 3;
 
+// A small fanned-out photo stack (up to 3 real Cloudinary photos, layered
+// with depth) once a collection has content, otherwise today's single
+// bundled placeholder jpeg - either way it's sized by the fixed-aspect
+// .CollectionStack container, not by the photos' own dimensions.
+function CollectionStack({ folder, alt, fallbackSrc }) {
+  const { images } = useCollectionImages(folder);
+  const stackImages = images.slice(0, STACK_SIZE);
+
+  return (
+    <div className="CollectionStack">
+      {stackImages.length === 0 ? (
+        <img
+          src={fallbackSrc}
+          alt={alt}
+          className="img-skeleton CollectionStack-item CollectionStack-item-0"
+          ref={clearSkeletonIfLoaded}
+          onLoad={clearSkeleton}
+        />
+      ) : (
+        stackImages.map((img, i) => (
+          <img
+            key={img.public_id}
+            src={cloudinaryUrl(img.public_id, { width: 600 })}
+            alt={i === 0 ? alt : ''}
+            className={`img-skeleton CollectionStack-item CollectionStack-item-${i}`}
+            ref={clearSkeletonIfLoaded}
+            onLoad={clearSkeleton}
+          />
+        ))
+      )}
+    </div>
+  );
+}
 
 function CollectionsPage() {
   return (
@@ -20,25 +56,25 @@ function CollectionsPage() {
           <h2>&nbsp;∞</h2>
         </div>
         <br /><br />
-            
-          
+
+
         <div className="PhotoCategories">
           <Link to="/collections/nature">
-          <img src={nature1} width="768" height="1024" className="img-skeleton" alt="Nature collection" ref={clearSkeletonIfLoaded} onLoad={clearSkeleton} />
+          <CollectionStack folder="nature" alt="Nature collection" fallbackSrc={nature1} />
           </Link>
 
           <Link to="/collections/architecture">
-          <img src={arch1} width="1024" height="768" className="img-skeleton" alt="Architecture collection" ref={clearSkeletonIfLoaded} onLoad={clearSkeleton} />
+          <CollectionStack folder="architecture" alt="Architecture collection" fallbackSrc={arch1} />
           </Link>
 
           <Link to="/collections/landscape">
-          <img src={landscape1} width="1024" height="768" className="img-skeleton" alt="Landscape collection" ref={clearSkeletonIfLoaded} onLoad={clearSkeleton} />
+          <CollectionStack folder="landscape" alt="Landscape collection" fallbackSrc={landscape1} />
           </Link>
           <Link to="/collections/street">
-            <img src={street1} width="768" height="1024" className="img-skeleton" alt="Street collection" ref={clearSkeletonIfLoaded} onLoad={clearSkeleton} />
+            <CollectionStack folder="street" alt="Street collection" fallbackSrc={street1} />
           </Link>
         </div>
-        
+
       </div>
 
     </div>

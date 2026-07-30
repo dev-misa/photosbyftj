@@ -1,12 +1,10 @@
 import BackToCollection from '../components/BackToCollection'
-import CollectionBadge from '../components/CollectionBadge'
-import ComingSoonNotice from '../components/ComingSoonNotice'
+import CollectionGallery from '../components/CollectionGallery'
 function LandscapePage() {
   return (
     <div>
       <BackToCollection />
-      <CollectionBadge category="LANDSCAPE" photoCount={0}/>
-      <ComingSoonNotice />
+      <CollectionGallery category="LANDSCAPE" folder="landscape" />
     </div>
   )
 }
