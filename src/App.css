@@ -247,8 +247,8 @@ a, a:visited, a:hover, a:active {
   position: relative;
   display: block;
   width: 100%;
-  max-width: min(600px, 85vw);
-  aspect-ratio: 4 / 5;
+  max-width: min(500px, 78vw);
+  aspect-ratio: 1 / 1;
   margin: 0 auto;
   padding: 0;
   border: none;
