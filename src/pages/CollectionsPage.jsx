@@ -7,39 +7,22 @@ import { clearSkeleton, clearSkeletonIfLoaded } from "../utils/imgSkeleton";
 import { useCollectionImages } from "../hooks/useCollectionImages";
 import { cloudinaryUrl } from "../utils/cloudinary";
 
-const STACK_SIZE = 3;
-
-// A small fanned-out photo stack (up to 3 real Cloudinary photos, layered
-// with depth) once a collection has content, otherwise today's single
-// bundled placeholder jpeg - either way it's sized by the fixed-aspect
-// .CollectionStack container, not by the photos' own dimensions.
-function CollectionStack({ folder, alt, fallbackSrc }) {
+// Shows the first real Cloudinary photo in a collection once it has one,
+// otherwise falls back to today's bundled placeholder jpeg.
+function CollectionCover({ folder, alt, fallbackSrc, fallbackWidth, fallbackHeight }) {
   const { images } = useCollectionImages(folder);
-  const stackImages = images.slice(0, STACK_SIZE);
+  const cover = images[0];
 
   return (
-    <div className="CollectionStack">
-      {stackImages.length === 0 ? (
-        <img
-          src={fallbackSrc}
-          alt={alt}
-          className="img-skeleton CollectionStack-item CollectionStack-item-0"
-          ref={clearSkeletonIfLoaded}
-          onLoad={clearSkeleton}
-        />
-      ) : (
-        stackImages.map((img, i) => (
-          <img
-            key={img.public_id}
-            src={cloudinaryUrl(img.public_id, { width: 600 })}
-            alt={i === 0 ? alt : ''}
-            className={`img-skeleton CollectionStack-item CollectionStack-item-${i}`}
-            ref={clearSkeletonIfLoaded}
-            onLoad={clearSkeleton}
-          />
-        ))
-      )}
-    </div>
+    <img
+      src={cover ? cloudinaryUrl(cover.public_id, { width: 800 }) : fallbackSrc}
+      width={cover ? cover.width : fallbackWidth}
+      height={cover ? cover.height : fallbackHeight}
+      className="img-skeleton"
+      alt={alt}
+      ref={clearSkeletonIfLoaded}
+      onLoad={clearSkeleton}
+    />
   );
 }
 
@@ -60,18 +43,18 @@ function CollectionsPage() {
 
         <div className="PhotoCategories">
           <Link to="/collections/nature">
-          <CollectionStack folder="nature" alt="Nature collection" fallbackSrc={nature1} />
+          <CollectionCover folder="nature" alt="Nature collection" fallbackSrc={nature1} fallbackWidth={768} fallbackHeight={1024} />
           </Link>
 
           <Link to="/collections/architecture">
-          <CollectionStack folder="architecture" alt="Architecture collection" fallbackSrc={arch1} />
+          <CollectionCover folder="architecture" alt="Architecture collection" fallbackSrc={arch1} fallbackWidth={1024} fallbackHeight={768} />
           </Link>
 
           <Link to="/collections/landscape">
-          <CollectionStack folder="landscape" alt="Landscape collection" fallbackSrc={landscape1} />
+          <CollectionCover folder="landscape" alt="Landscape collection" fallbackSrc={landscape1} fallbackWidth={1024} fallbackHeight={768} />
           </Link>
           <Link to="/collections/street">
-            <CollectionStack folder="street" alt="Street collection" fallbackSrc={street1} />
+            <CollectionCover folder="street" alt="Street collection" fallbackSrc={street1} fallbackWidth={768} fallbackHeight={1024} />
           </Link>
         </div>
 

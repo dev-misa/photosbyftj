@@ -394,29 +394,26 @@ Header {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 50px;                                      
 }
-.CollectionGallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 30px;
+.CollectionCycler {
   margin-top: 30px;
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
 }
-
-.CollectionGallery img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 12px;
-}
-
-.CollectionStack {
+.CollectionCycler-button {
   position: relative;
-  aspect-ratio: 4 / 5;
+  display: block;
   width: 100%;
+  max-width: 500px;
+  aspect-ratio: 1 / 1;
+  margin: 0 auto;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
-.CollectionStack-item {
+.CollectionCycler-button:disabled {
+  cursor: default;
+}
+.CollectionCycler-item {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -424,15 +421,34 @@ Header {
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 6px 16px var(--colShadow);
-  transition: transform 0.2s ease;
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.45s ease;
 }
-.CollectionStack-item-0 { z-index: 3; transform: rotate(0deg) translate(0, 0); }
-.CollectionStack-item-1 { z-index: 2; transform: rotate(-6deg) translate(-14px, 6px); }
-.CollectionStack-item-2 { z-index: 1; transform: rotate(7deg) translate(16px, 10px); }
-
-.PhotoCategories a:hover .CollectionStack-item-1 { transform: rotate(-10deg) translate(-22px, 10px); }
-.PhotoCategories a:hover .CollectionStack-item-2 { transform: rotate(11deg) translate(24px, 14px); }
-
+.CollectionCycler-front {
+  z-index: 4;
+  transform: rotate(0deg) translate(0, 0) scale(1);
+  opacity: 1;
+}
+.CollectionCycler-peek-1 {
+  z-index: 3;
+  transform: rotate(-5deg) translate(-16px, 10px) scale(0.96);
+  opacity: 1;
+}
+.CollectionCycler-peek-2 {
+  z-index: 2;
+  transform: rotate(6deg) translate(18px, 16px) scale(0.92);
+  opacity: 1;
+}
+.CollectionCycler-back {
+  z-index: 1;
+  transform: rotate(9deg) translate(0, 34px) scale(0.85);
+  opacity: 0;
+  pointer-events: none;
+}
+.CollectionCycler-count {
+  margin-top: 14px;
+  color: var(--txt);
+  font-family: enriqueta;
+}
 .BackToCollection {
   margin-top: 100px;display:flex;flex-wrap:wrap;gap:10px;
   
@@ -762,29 +778,26 @@ Header {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 50px;                                      
 }
-.CollectionGallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 30px;
+.CollectionCycler {
   margin-top: 30px;
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
 }
-
-.CollectionGallery img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 12px;
-}
-
-.CollectionStack {
+.CollectionCycler-button {
   position: relative;
-  aspect-ratio: 4 / 5;
+  display: block;
   width: 100%;
+  max-width: 500px;
+  aspect-ratio: 1 / 1;
+  margin: 0 auto;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
-.CollectionStack-item {
+.CollectionCycler-button:disabled {
+  cursor: default;
+}
+.CollectionCycler-item {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -792,15 +805,34 @@ Header {
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 6px 16px var(--colShadow);
-  transition: transform 0.2s ease;
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.45s ease;
 }
-.CollectionStack-item-0 { z-index: 3; transform: rotate(0deg) translate(0, 0); }
-.CollectionStack-item-1 { z-index: 2; transform: rotate(-6deg) translate(-14px, 6px); }
-.CollectionStack-item-2 { z-index: 1; transform: rotate(7deg) translate(16px, 10px); }
-
-.PhotoCategories a:hover .CollectionStack-item-1 { transform: rotate(-10deg) translate(-22px, 10px); }
-.PhotoCategories a:hover .CollectionStack-item-2 { transform: rotate(11deg) translate(24px, 14px); }
-
+.CollectionCycler-front {
+  z-index: 4;
+  transform: rotate(0deg) translate(0, 0) scale(1);
+  opacity: 1;
+}
+.CollectionCycler-peek-1 {
+  z-index: 3;
+  transform: rotate(-5deg) translate(-16px, 10px) scale(0.96);
+  opacity: 1;
+}
+.CollectionCycler-peek-2 {
+  z-index: 2;
+  transform: rotate(6deg) translate(18px, 16px) scale(0.92);
+  opacity: 1;
+}
+.CollectionCycler-back {
+  z-index: 1;
+  transform: rotate(9deg) translate(0, 34px) scale(0.85);
+  opacity: 0;
+  pointer-events: none;
+}
+.CollectionCycler-count {
+  margin-top: 14px;
+  color: var(--txt);
+  font-family: enriqueta;
+}
 .BackToCollection {
   margin-top: 100px;display:flex;flex-wrap:wrap;gap:10px;
   
