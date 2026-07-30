@@ -17,8 +17,8 @@
 
 .dark-mode {
   --bg-color: #121212;
-  --accent: #A62626;
-  --colShadow: #A62626;
+  --accent: #5C1A1D;
+  --colShadow: rgba(12, 12, 12, 0.25);
   --txt:#fff;
   --blurbg: rgba(12, 12, 12, 0.25);
   --chip-surface: rgba(255, 255, 255, 0.15);

@@ -3,7 +3,7 @@ import CollectionGallery from '../components/CollectionGallery'
 
 function ArchitecturePage() {
   return (
-    <div>
+    <div className="SubPage">
     <BackToCollection />
     <CollectionGallery category="ARCHITECTURE" folder="architecture" />
     </div>

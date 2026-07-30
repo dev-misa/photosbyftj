@@ -3,7 +3,7 @@ import CollectionGallery from '../components/CollectionGallery'
 function NaturePage2() {
   return (
 
-    <div>
+    <div className="SubPage">
 
     <BackToCollection />
     <CollectionGallery category="NATURE" folder="nature" />

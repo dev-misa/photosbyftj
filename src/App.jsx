@@ -14,20 +14,20 @@ import ScrollToTop from './components/ScrollToTop.jsx';
 
 export default function App() {
   return (
-    <div>
+    <div className="AppRoot">
       <ScrollToTop/>
       <Header />
       <main>
         <Routes>
           <Route path="/" element={<About />} />
           <Route path="/collections" element={<CollectionsPage />} />
-          <Route path="/collections/nature" element={<NaturePage2 />} /> 
+          <Route path="/collections/nature" element={<NaturePage2 />} />
           <Route path="/collections/architecture" element={<ArchitecturePage />} />
           <Route path="/collections/street" element={<StreetPage />} />
           <Route path="/collections/landscape" element={<LandscapePage />} />
         </Routes>
+        <Footer />
       </main>
-      <Footer />
     </div>
   );
 }
