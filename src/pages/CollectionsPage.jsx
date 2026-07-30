@@ -9,20 +9,23 @@ import { cloudinaryUrl } from "../utils/cloudinary";
 
 // Shows the first real Cloudinary photo in a collection once it has one,
 // otherwise falls back to today's bundled placeholder jpeg.
-function CollectionCover({ folder, alt, fallbackSrc, fallbackWidth, fallbackHeight }) {
+function CollectionCover({ folder, alt, title, fallbackSrc, fallbackWidth, fallbackHeight }) {
   const { images } = useCollectionImages(folder);
   const cover = images[0];
 
   return (
-    <img
-      src={cover ? cloudinaryUrl(cover.public_id, { width: 800 }) : fallbackSrc}
-      width={cover ? cover.width : fallbackWidth}
-      height={cover ? cover.height : fallbackHeight}
-      className="img-skeleton"
-      alt={alt}
-      ref={clearSkeletonIfLoaded}
-      onLoad={clearSkeleton}
-    />
+    <div className="CollectionCoverWrap">
+      <img
+        src={cover ? cloudinaryUrl(cover.public_id, { width: 800 }) : fallbackSrc}
+        width={cover ? cover.width : fallbackWidth}
+        height={cover ? cover.height : fallbackHeight}
+        className="img-skeleton"
+        alt={alt}
+        ref={clearSkeletonIfLoaded}
+        onLoad={clearSkeleton}
+      />
+      <span className="CategoryPill">{title}</span>
+    </div>
   );
 }
 
@@ -43,18 +46,18 @@ function CollectionsPage() {
 
         <div className="PhotoCategories">
           <Link to="/collections/nature">
-          <CollectionCover folder="nature" alt="Animals collection" fallbackSrc={nature1} fallbackWidth={768} fallbackHeight={1024} />
+          <CollectionCover folder="nature" alt="Animals collection" title="ANIMALS" fallbackSrc={nature1} fallbackWidth={768} fallbackHeight={1024} />
           </Link>
 
           <Link to="/collections/architecture">
-          <CollectionCover folder="architecture" alt="Architecture collection" fallbackSrc={arch1} fallbackWidth={1024} fallbackHeight={768} />
+          <CollectionCover folder="architecture" alt="Architecture collection" title="ARCHITECTURE" fallbackSrc={arch1} fallbackWidth={1024} fallbackHeight={768} />
           </Link>
 
           <Link to="/collections/landscape">
-          <CollectionCover folder="landscape" alt="Landscape collection" fallbackSrc={landscape1} fallbackWidth={1024} fallbackHeight={768} />
+          <CollectionCover folder="landscape" alt="Landscape collection" title="LANDSCAPE" fallbackSrc={landscape1} fallbackWidth={1024} fallbackHeight={768} />
           </Link>
           <Link to="/collections/street">
-            <CollectionCover folder="street" alt="Street collection" fallbackSrc={street1} fallbackWidth={768} fallbackHeight={1024} />
+            <CollectionCover folder="street" alt="Street collection" title="STREET" fallbackSrc={street1} fallbackWidth={768} fallbackHeight={1024} />
           </Link>
         </div>
 
