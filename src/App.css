@@ -402,7 +402,7 @@ Header {
   position: relative;
   display: block;
   width: 100%;
-  max-width: 500px;
+  max-width: min(500px, 78vw);
   aspect-ratio: 1 / 1;
   margin: 0 auto;
   padding: 0;
@@ -786,7 +786,7 @@ Header {
   position: relative;
   display: block;
   width: 100%;
-  max-width: 500px;
+  max-width: min(500px, 78vw);
   aspect-ratio: 1 / 1;
   margin: 0 auto;
   padding: 0;
