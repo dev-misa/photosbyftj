@@ -248,7 +248,7 @@ a, a:visited, a:hover, a:active {
   display: block;
   width: 100%;
   max-width: min(500px, 78vw);
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 4 / 5;
   margin: 0 auto;
   padding: 0;
   border: none;
