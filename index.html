@@ -2,6 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script>
+      (function () {
+        try {
+          if (localStorage.getItem('theme') === 'dark') {
+            document.documentElement.classList.add('dark-mode');
+          }
+        } catch (e) {}
+      })();
+    </script>
     <link rel="icon" type="image/svg+xml" href="/josh pfp.png?v=2" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Felix Josh - Home</title>
@@ -21,8 +30,8 @@
   })();
 </script>
 
-  <script type="module" crossorigin src="/assets/index-DxliuqW2.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-DfQQdF9s.css">
+  <script type="module" crossorigin src="/assets/index-Dwvn584B.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CHcOiW-q.css">
 </head>
   <body>
     <div id="root"></div>
