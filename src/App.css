@@ -84,7 +84,9 @@ a, a:visited, a:hover, a:active {
 .NavLinks .theme-toggle { color: var(--txt); }
 .NavLinks .theme-toggle:hover { opacity: 0.85; }
 .NavLinks .navlink {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 40px; height: 40px;
   background: rgba(0, 0, 0, 0.05);
   border-radius: 9999px;
