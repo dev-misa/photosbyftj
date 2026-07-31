@@ -80,7 +80,9 @@ a, a:visited, a:hover, a:active {
 }
 .NavLinks .label { display: none; }
 .NavLinks .icon { display: inline-block; width: 38px; height: 38px; }
-.NavLinks > button > img { width: 30px; height: 30px; }
+.NavLinks .theme-icon { display: inline-block; width: 30px; height: 30px; }
+.NavLinks .theme-toggle { color: var(--txt); }
+.NavLinks .theme-toggle:hover { opacity: 0.85; }
 .NavLinks .navlink {
   display: inline-block;
   width: 40px; height: 40px;
@@ -342,7 +344,7 @@ a, a:visited, a:hover, a:active {
   .NavLinks { padding-right: 30px; }
   .NavLinks .icon { width: 50px; height: 50px; }
   .NavLinks .navlink { width: 50px; height: 50px; }
-  .NavLinks > button > img { width: 50px; height: 50px; }
+  .NavLinks .theme-icon { width: 50px; height: 50px; }
 }
 
 /* ================================================================ */
@@ -350,7 +352,7 @@ a, a:visited, a:hover, a:active {
 /* ================================================================ */
 @media (min-width: 1480px) {
   .NavLinks { gap: 50px; padding-right: 50px; }
-  .NavLinks > button > img { width: 40px; height: 40px; }
+  .NavLinks .theme-icon { width: 40px; height: 40px; }
 
   .CurrentSetup { height: 50vh; width: 80%; max-width: 1400px; }
 
