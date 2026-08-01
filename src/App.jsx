@@ -10,6 +10,7 @@ import ArchitecturePage from "./pages/ArchitecturePage.jsx"
 import StreetPage from './pages/StreetPage.jsx';
 import LandscapePage from './pages/LandscapePage.jsx'
 import ScrollToTop from './components/ScrollToTop.jsx';
+import CookieConsent from './components/CookieConsent.jsx';
 
 
 export default function App() {
@@ -28,6 +29,7 @@ export default function App() {
         </Routes>
         <Footer />
       </main>
+      <CookieConsent />
     </div>
   );
 }

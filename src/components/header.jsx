@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';   // <-- add this
 import pfp from '../assets/images/josh pfp.png';
 import { clearSkeleton, clearSkeletonIfLoaded } from '../utils/imgSkeleton';
+import { getConsent } from '../utils/cookieConsent';
 
 const Header = () => {
   const [darkMode, setDarkMode] = useState(() =>
@@ -9,14 +10,12 @@ const Header = () => {
   );
 
   const toggleTheme = () => {
-    if (darkMode) {
-      document.documentElement.classList.remove("dark-mode");
-      localStorage.setItem("theme", "light");
-    } else {
-      document.documentElement.classList.add("dark-mode");
-      localStorage.setItem("theme", "dark");
+    const nextIsDark = !darkMode;
+    document.documentElement.classList.toggle("dark-mode", nextIsDark);
+    if (getConsent() === "accepted") {
+      localStorage.setItem("theme", nextIsDark ? "dark" : "light");
     }
-    setDarkMode(!darkMode);
+    setDarkMode(nextIsDark);
   };
 
   return (

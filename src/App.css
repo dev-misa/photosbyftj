@@ -20,6 +20,56 @@ main {
 }
 
 /* ---------------------------------------------------------------- */
+/* Cookie consent banner                                             */
+/* ---------------------------------------------------------------- */
+.CookieConsent {
+  position: fixed;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  z-index: 1000;
+  width: min(520px, calc(100% - 32px));
+  background-color: var(--bg-color);
+  border: 0.5px solid var(--accent);
+  border-radius: 20px;
+  box-shadow: 0px 4px 16px var(--colShadow);
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-family: enriqueta;
+}
+.CookieConsent p {
+  margin: 0;
+  color: var(--txt);
+  font-size: 15px;
+  line-height: 1.4;
+}
+.CookieConsent-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.CookieConsent-actions button {
+  font-family: enriqueta;
+  font-size: 15px;
+  border-radius: 25px;
+  padding: 0.5em 1.2em;
+  cursor: pointer;
+}
+.CookieConsent-decline {
+  background-color: var(--bg-color);
+  border: 0.5px solid var(--accent);
+  color: var(--accent);
+}
+.CookieConsent-accept {
+  background-color: var(--accent);
+  border: 0.5px solid var(--accent);
+  color: #fff;
+}
+.CookieConsent-decline:hover, .CookieConsent-accept:hover { opacity: 0.85; }
+
+/* ---------------------------------------------------------------- */
 /* Header / logo / nav                                               */
 /* ---------------------------------------------------------------- */
 .Header {
